@@ -129,7 +129,7 @@ function Library:CreateLib(brackets)
 
 		-- StarterGui.Peacock.Main
 		GUI["2"] = Instance.new("Frame", GUI["6g"]);
-		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(51, 25, 3);
+		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(10, 10, 10);
 		GUI["2"]["AnchorPoint"] = Vector2.new(0, 0)
 		GUI["2"]["Size"] = UDim2.new(0, 525, 0, 318);
 		GUI["2"]["Position"] = UDim2.fromOffset(0, 0, 0);
@@ -142,7 +142,7 @@ function Library:CreateLib(brackets)
 		-- StarterGUI.Peacock.Main.ContentContainer
 		GUI["1b"] = Instance.new("Frame", GUI["2"]);
 		GUI["1b"]["BorderSizePixel"] = 0;
-		GUI["1b"]["BackgroundColor3"] = Color3.fromRGB(29, 14, 2);
+		GUI["1b"]["BackgroundColor3"] = Color3.fromRGB(29, 29, 29);
 		GUI["1b"]["AnchorPoint"] = Vector2.new(1, 0);
 		GUI["1b"]["BackgroundTransparency"] = 1;
 		GUI["1b"]["Size"] = UDim2.new(1, -132, 1, -42);
