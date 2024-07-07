@@ -123,20 +123,6 @@ function Library:CreateLib(brackets)
 			end
 		end)
 
-		-- StarterGui.Peacock.HideFrames
-		GUI["5e"] = Instance.new("TextButton", GUI["1"]);
-		GUI["5e"]["TextSize"] = 15;
-		GUI["5e"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15);
-		GUI["5e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-		GUI["5e"]["Size"] = UDim2.new(0.134, 0, 0.034, 0);
-		GUI["5e"]["Name"] = [[HideFrames]];
-		GUI["5e"]["Text"] = [[Hide Gui/ReHide Gui]];
-		GUI["5e"]["Font"] = Enum.Font.Ubuntu;
-		GUI["5e"]["Position"] = UDim2.new(0.335, 0, 0.082, 0);
-		GUI["5e"].MouseButton1Click:Connect(function()
-			GUI["2"]["Visible"] = not GUI["2"]["Visible"]
-		end)
-
 		-- StarterGui.Peacock.HideFrames.UICorner
 		GUI["5f"] = Instance.new("UICorner", GUI["5e"]);
 		GUI["5f"]["CornerRadius"] = UDim.new(0, 2);
