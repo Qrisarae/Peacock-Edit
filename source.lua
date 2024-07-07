@@ -168,7 +168,7 @@ function Library:CreateLib(brackets)
 		-- StarterGUI.Peacock.Main.ContentContainer.Fade.UIGradient
 		GUI["5b"] = Instance.new("UIGradient", GUI["5a"]);
 		GUI["5b"]["Rotation"] = 90;
-		GUI["5b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(254, 126, 15)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 127, 15))};
+		GUI["5b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(10, 10, 10)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(15, 15, 15))};
 
 		-- StarterGui.Peacock.Main.TopBar
 		GUI["5"] = Instance.new("Frame", GUI["2"]);
@@ -184,7 +184,7 @@ function Library:CreateLib(brackets)
 		-- StarterGui.Peacock.Main.TopBar.Extension
 		GUI["7"] = Instance.new("Frame", GUI["5"]);
 		GUI["7"]["BorderSizePixel"] = 0;
-		GUI["7"]["BackgroundColor3"] = Color3.fromRGB(20, 10, 1);
+		GUI["7"]["BackgroundColor3"] = Color3.fromRGB(20, 20, 20);
 		GUI["7"]["AnchorPoint"] = Vector2.new(0, 1);
 		GUI["7"]["Size"] = UDim2.new(1, 0, 0.5, 0);
 		GUI["7"]["Position"] = UDim2.new(0, 0, 1, 0);
@@ -263,7 +263,7 @@ function Library:CreateLib(brackets)
 		-- StarterGui.Peacock.Main.Navigation
 		GUI["d"] = Instance.new("Frame", GUI["2"]);
 		GUI["d"]["BorderSizePixel"] = 0;
-		GUI["d"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+		GUI["d"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 		GUI["d"]["Size"] = UDim2.new(0, 120, 1, -30);
 		GUI["d"]["Position"] = UDim2.new(0, 0, 0, 30);
 		GUI["d"]["Name"] = [[Navigation]];
@@ -293,14 +293,14 @@ function Library:CreateLib(brackets)
 		-- StarterGui.Peacock.Main.Navigation.Hide
 		GUI["i"] = Instance.new("Frame", GUI["d"]);
 		GUI["i"]["BorderSizePixel"] = 0;
-		GUI["i"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+		GUI["i"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 		GUI["i"]["Size"] = UDim2.new(1, 0, 0, 20);
 		GUI["i"]["Name"] = [[Hide]];
 
 		-- StarterGui.Peacock.Main.Navigation.Hide2
 		GUI["j"] = Instance.new("Frame", GUI["d"]);
 		GUI["j"]["BorderSizePixel"] = 0;
-		GUI["j"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+		GUI["j"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 		GUI["j"]["AnchorPoint"] = Vector2.new(1, 0);
 		GUI["j"]["Size"] = UDim2.new(0, 20, 1, 0);
 		GUI["j"]["Position"] = UDim2.new(1, 0, 0, 0);
@@ -466,7 +466,7 @@ function Library:CreateLib(brackets)
 			do
 				-- StarterGui.Peacock.Main.ContentContainer.HomeTab.Button
 				Button["1d"] = Instance.new("Frame", Tab["1c"]);
-				Button["1d"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+				Button["1d"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 				Button["1d"]["Size"] = UDim2.new(1, 0, 0, 32);
 				Button["1d"]["Name"] = [[Button]];
 
@@ -544,7 +544,7 @@ function Library:CreateLib(brackets)
 
 					if input.UserInputType == Enum.UserInputType.MouseButton1 and Button.Hover then
 						Button.MouseDown = true
-						Library:tween(Button["1d"], {BackgroundColor3 = Color3.fromRGB(100, 48, 5)})
+						Library:tween(Button["1d"], {BackgroundColor3 = Color3.fromRGB(6, 6, 6)})
 						Library:tween(Button["1f"], {Color = Color3.fromRGB(200, 200, 200)})
 						brackets.callback()
 					end
@@ -557,10 +557,10 @@ function Library:CreateLib(brackets)
 						Button.MouseDown = false
 
 						if Button.Hover then
-							Library:tween(Button["1d"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Button["1d"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Button["1f"], {Color = Color3.fromRGB(102, 102, 102)})
 						else
-							Library:tween(Button["1d"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Button["1d"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Button["1f"], {Color = Color3.fromRGB(82, 82, 82)})
 						end
 					end
@@ -581,7 +581,7 @@ function Library:CreateLib(brackets)
 			do
 				-- StarterLabel.Peacock.Main.ContentContainer.HomeTab.Label
 				Label["19"] = Instance.new("Frame", Tab["1c"]);
-				Label["19"]["BackgroundColor3"] = Color3.fromRGB(20, 10, 1);
+				Label["19"]["BackgroundColor3"] = Color3.fromRGB(20, 20, 20);
 				Label["19"]["Size"] = UDim2.new(1, 0, 0, 26);
 				Label["19"]["Name"] = [[Label]];
 
@@ -598,7 +598,7 @@ function Library:CreateLib(brackets)
 
 				-- StarterLabel.Peacock.Main.ContentContainer.HomeTab.Label.UIStroke
 				Label["22"] = Instance.new("UIStroke", Label["19"]);
-				Label["22"]["Color"] = Color3.fromRGB(27, 13, 2);
+				Label["22"]["Color"] = Color3.fromRGB(27, 27, 27);
 				Label["22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 				-- StarterLabel.Peacock.Main.ContentContainer.HomeTab.Label.chat
@@ -669,7 +669,7 @@ function Library:CreateLib(brackets)
 			do
 				-- StarterGui.Peacock.Main.ContentContainer.HomeTab.Slider
 				Slider["25"] = Instance.new("Frame", Tab["1c"]);
-				Slider["25"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+				Slider["25"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 				Slider["25"]["Size"] = UDim2.new(1, 0, 0, 38);
 				Slider["25"]["Name"] = [[Slider]];
 
@@ -692,7 +692,7 @@ function Library:CreateLib(brackets)
 				-- StarterGui.Peacock.Main.ContentContainer.HomeTab.Slider.SliderBack
 				Slider["29"] = Instance.new("Frame", Slider["25"]);
 				Slider["29"]["BorderSizePixel"] = 0;
-				Slider["29"]["BackgroundColor3"] = Color3.fromRGB(19, 9, 1);
+				Slider["29"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
 				Slider["29"]["AnchorPoint"] = Vector2.new(0, 1);
 				Slider["29"]["Size"] = UDim2.new(1, 0, 0, 9);
 				Slider["29"]["Position"] = UDim2.new(0, 0, 1, 0);
@@ -794,7 +794,7 @@ function Library:CreateLib(brackets)
 
 					if input.UserInputType == Enum.UserInputType.MouseButton1 and Slider.Hover then
 						Slider.MouseDown = true
-						Library:tween(Slider["25"], {BackgroundColor3 = Color3.fromRGB(20, 10, 1)})
+						Library:tween(Slider["25"], {BackgroundColor3 = Color3.fromRGB(20, 20, 20)})
 						Library:tween(Slider["28"], {Color = Color3.fromRGB(200, 200, 200)})
 						Library:tween(Slider["31"], {Color = Color3.fromRGB(200, 200, 200)})
 						Library:tween(Slider["32"], {BackgroundColor3 = Color3.fromRGB(200, 200, 200)})
@@ -814,12 +814,12 @@ function Library:CreateLib(brackets)
 						Slider.MouseDown = false
 
 						if Slider.Hover then
-							Library:tween(Slider["25"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Slider["25"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Slider["28"], {Color = Color3.fromRGB(102, 102, 102)})
 							Library:tween(Slider["31"], {Color = Color3.fromRGB(102, 102, 102)})
 							Library:tween(Slider["32"], {BackgroundColor3 = Color3.fromRGB(102, 102, 102)})
 						else
-							Library:tween(Slider["25"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Slider["25"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Slider["28"], {Color = Color3.fromRGB(82, 82, 82)})
 							Library:tween(Slider["31"], {Color = Color3.fromRGB(82, 82, 82)})
 							Library:tween(Slider["32"], {BackgroundColor3 = Color3.fromRGB(82, 82, 82)})
@@ -850,7 +850,7 @@ function Library:CreateLib(brackets)
 			do
 				-- StarterGui.Peacock.Main.ContentContainer.HomeTab.ToggleInActive
 				Toggle["35"] = Instance.new("Frame", Tab["1c"]);
-				Toggle["35"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+				Toggle["35"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 				Toggle["35"]["Size"] = UDim2.new(1, 0, 0, 32);
 				Toggle["35"]["Name"] = [[ToggleInActive]];
 
@@ -924,7 +924,7 @@ function Library:CreateLib(brackets)
 					end
 
 					if Toggle.State then
-						Library:tween(Toggle["39"], {BackgroundColor3 = Color3.fromRGB(13, 24, 3)})
+						Library:tween(Toggle["39"], {BackgroundColor3 = Color3.fromRGB(13, 13, 13)})
 						Library:tween(Toggle["42"], {ImageTransparency = 0})
 					else
 						Library:tween(Toggle["39"], {BackgroundColor3 = Color3.fromRGB(89, 89, 89)})
@@ -961,7 +961,7 @@ function Library:CreateLib(brackets)
 
 					if input.UserInputType == Enum.UserInputType.MouseButton1 and Toggle.Hover then
 						Toggle.MouseDown = true
-						Library:tween(Toggle["35"], {BackgroundColor3 = Color3.fromRGB(20, 10, 1)})
+						Library:tween(Toggle["35"], {BackgroundColor3 = Color3.fromRGB(20, 20, 20)})
 						Library:tween(Toggle["38"], {Color = Color3.fromRGB(200, 200, 200)})
 						Toggle:Toggle()
 					end
@@ -974,10 +974,10 @@ function Library:CreateLib(brackets)
 						Toggle.MouseDown = false
 
 						if Toggle.Hover then
-							Library:tween(Toggle["35"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Toggle["35"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Toggle["38"], {Color = Color3.fromRGB(102, 102, 102)})
 						else
-							Library:tween(Toggle["35"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Toggle["35"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Toggle["38"], {Color = Color3.fromRGB(82, 82, 82)})
 						end
 					end
@@ -1010,7 +1010,7 @@ function Library:CreateLib(brackets)
 			do
 				-- StarterGui.Peacock.Drag.Main.ContentContainer.HomeTab.Dropdown
 				Dropdown["44"] = Instance.new("Frame", Tab["1c"]);
-				Dropdown["44"]["BackgroundColor3"] = Color3.fromRGB(27, 13, 2);
+				Dropdown["44"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
 				Dropdown["44"]["Size"] = UDim2.new(1, 0, 0, 30);
 				Dropdown["44"]["ClipsDescendants"] = true;
 				Dropdown["44"]["Name"] = [[Dropdown]];
@@ -1127,7 +1127,7 @@ function Library:CreateLib(brackets)
 
                         if input.UserInputType == Enum.UserInputType.MouseButton1 and Item.Hover then
                             Item.MouseDown = true
-                            Library:tween(Dropdown.Items[id].instance["52"], {BackgroundColor3 = Color3.fromRGB(100, 48, 5)})
+                            Library:tween(Dropdown.Items[id].instance["52"], {BackgroundColor3 = Color3.fromRGB(6, 6, 6)})
                             Library:tween(Dropdown.Items[id].instance["53"], {Color = Color3.fromRGB(200, 200, 200)})
                             brackets.callback(value)
                             Dropdown:Toggle()
@@ -1143,10 +1143,10 @@ function Library:CreateLib(brackets)
                             Item.MouseDown = false
     
                             if Item.Hover then
-                                Library:tween(Dropdown.Items[id].instance["52"], {BackgroundColor3 = Color3.fromRGB(137, 66, 9)})
+                                Library:tween(Dropdown.Items[id].instance["52"], {BackgroundColor3 = Color3.fromRGB(10, 10, 10)})
                                 Library:tween(Dropdown.Items[id].instance["53"], {Color = Color3.fromRGB(102, 102, 102)})
                             else
-                                Library:tween(Dropdown.Items[id].instance["52"], {BackgroundColor3 = Color3.fromRGB(137, 66, 9)})
+                                Library:tween(Dropdown.Items[id].instance["52"], {BackgroundColor3 = Color3.fromRGB(10, 10, 10)})
                                 Library:tween(Dropdown.Items[id].instance["53"], {Color = Color3.fromRGB(82, 82, 82)})
                             end
                         end
@@ -1211,7 +1211,7 @@ function Library:CreateLib(brackets)
 
 					if input.UserInputType == Enum.UserInputType.MouseButton1 and Dropdown.Hover then
 						Dropdown.MouseDown = true
-						Library:tween(Dropdown["44"], {BackgroundColor3 = Color3.fromRGB(100, 48, 5)})
+						Library:tween(Dropdown["44"], {BackgroundColor3 = Color3.fromRGB(6, 6, 6)})
 						Library:tween(Dropdown["46"], {Color = Color3.fromRGB(200, 200, 200)})
                         
                         if not Dropdown.HoveringItem then
@@ -1227,10 +1227,10 @@ function Library:CreateLib(brackets)
 						Dropdown.MouseDown = false
 
 						if Dropdown.Hover then
-							Library:tween(Dropdown["44"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Dropdown["44"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Dropdown["46"], {Color = Color3.fromRGB(102, 102, 102)})
 						else
-							Library:tween(Dropdown["44"], {BackgroundColor3 = Color3.fromRGB(27, 13, 2)})
+							Library:tween(Dropdown["44"], {BackgroundColor3 = Color3.fromRGB(27, 27, 27)})
 							Library:tween(Dropdown["46"], {Color = Color3.fromRGB(82, 82, 82)})
 						end
 					end
